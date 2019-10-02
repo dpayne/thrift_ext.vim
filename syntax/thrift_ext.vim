@@ -10,7 +10,7 @@
 syn keyword thriftExtTodo TODO todo FIXME fixme XXX xxx contained
 
 " Comments
-syn match thriftExtComment "#.*" contains=thriftExtExtTodo,@Spell
+syn match thriftExtComment "#.*" contains=thriftExtTodo,@Spell
 syn region thriftExtComment start="/\*" end="\*/" contains=thriftExtTodo,@Spell
 syn match thriftExtComment "//.\{-}\(?>\|$\)\@="
 
